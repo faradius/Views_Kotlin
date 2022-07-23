@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buttons">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.widget.Button
+        android:id="@+id/btnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/gradient"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:drawableStart="@drawable/ic_email"/>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_email"
+            android:backgroundTint="@color/green"/>
+
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/cgCondiciones"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parking"
+                app:chipIcon="@drawable/ic_car"
+                style="@style/chEntry"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balcón"
+                style="@style/chEntry"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 baños"
+                style="@style/chEntry"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="piscina"
+                style="@style/chEntry"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <RadioGroup
+            android:id="@+id/rgVacaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rbPlya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Playa"
+                android:checked="true"
+                android:buttonTint="@color/orange"
+                android:onClick="onRadioButtonClicked"
+                />
+            <RadioButton
+                android:id="@+id/rbMontaña"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Montaña"
+                android:onClick="onRadioButtonClicked"/>
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rgOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:checkedButton="@id/rbCar"
+            android:layout_margin="10dp">
+            <RadioButton
+                android:id="@+id/rbCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rb_car_bg"
+                android:button="@null"
+                />
+            <RadioButton
+                android:id="@+id/rbAirplane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rb_airplane_bg"
+                android:button="@null"/>
+
+            <RadioButton
+                android:id="@+id/rbTrain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rb_train_bg"
+                android:button="@null"/>
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cbSeguro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seguro de Viaje"
+            android:buttonTint="@color/orange"
+            android:enabled="false"
+            android:onClick="onCheckBoxClicked"
+            />
+
+        <CheckBox
+            android:id="@+id/cbCancelable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reserva Cancelable"
+            android:checked="true"
+            android:button="@drawable/cb_custom"
+            android:onClick="onCheckBoxClicked"/>
+
+        <ToggleButton
+            android:id="@+id/tgNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textOn="Si"
+            android:textOff="No"
+            android:checked="true" />
+
+        <ToggleButton
+            android:id="@+id/tgCustom"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:text=""
+            android:textOn=""
+            android:textOff=""
+            android:checked="true"
+            android:background="@drawable/tg_travel_bg"/>
+
+        <Switch
+            android:id="@+id/swNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notificar cambios por email"
+            android:thumb="@drawable/ic_email"
+            android:thumbTint="@color/orange"
+            android:trackTint="@color/green" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="Off"
+            android:textOn="On"
+            android:text="Notificación de Cambios"
+            app:showText="true"
+            android:checked="true"
+            android:thumb="@drawable/sw_thumb"
+            app:track="@drawable/sw_track"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_car"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/orange"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

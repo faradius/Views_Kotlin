@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NumberPickerTheme" parent="Theme.AppCompat.Light">
+
+        <item name="colorAccent">@color/white</item>
+        <!--Color del control, hace que quite la división de un objeto y otro-->
+        <item name="colorControlNormal">@android:color/transparent</item>
+
+        <!--Color del texto-->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:background">@color/gray_dark</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+</resources>

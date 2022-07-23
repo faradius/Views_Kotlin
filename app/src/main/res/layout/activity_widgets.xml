@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Widgets">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/pbMedium"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/pbSmall"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/pbLarge"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/pbIndeterminado"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/orange" />
+
+        <ProgressBar
+            android:id="@+id/pbDeterminado"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="300"
+            android:progress="100"
+            android:progressBackgroundTint="@color/gray"
+            android:progressTint="@color/green" />
+
+        <ProgressBar
+            android:id="@+id/pbSecundario"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="300"
+            android:progress="100"
+            android:progressBackgroundTint="@color/gray"
+            android:progressTint="@color/green"
+            android:secondaryProgress="130"
+            android:secondaryProgressTint="@color/purple" />
+
+        <SeekBar
+            android:id="@+id/sbNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumbTint="@color/purple"
+            android:progressBackgroundTint="@color/green"
+            android:progressTint="@color/orange"
+            android:thumb="@drawable/ic_car"
+            android:max="100"
+            android:progress="30"/>
+
+        <SeekBar
+            android:id="@+id/sbCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="6"
+            android:thumb="@drawable/sb_thumb"
+            android:progressDrawable="@drawable/sb_progress_bg"
+            />
+        <!--SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"-->
+        <View
+            android:id="@+id/vH"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/green" />
+
+        <View
+            android:id="@+id/vV"
+            android:layout_width="4dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@color/green" />
+
+        <Chronometer
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TimePicker
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <NumberPicker
+            android:id="@+id/npEjemplo"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:theme="@style/NumberPickerTheme"/>
+
+        <TextView
+            android:id="@+id/tvNumberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="3/5 " />
+
+        <me.tankery.lib.circularseekbar.CircularSeekBar
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            app:cs_negative_enabled="true"
+            app:cs_circle_style="round"
+            app:cs_circle_stroke_width="8dp"
+            app:cs_pointer_stroke_width="24dp"
+            app:cs_pointer_halo_width="14dp"
+            app:cs_progress = "30"
+            app:cs_max = "100"
+            />
+
+        <RatingBar
+            android:id="@+id/rbEjemplo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            style="@android:style/Widget.Material.Light.RatingBar.Small"
+            android:rating="3"
+            android:stepSize="0.5"
+            android:isIndicator="false"
+            android:progressBackgroundTint="@color/blue_light"
+            android:progressTint="@color/orange"/>
+        <!--RatingBar
+        android:isIndicator="false" indicamos que el usuario puede mover el indicador
+        ya si esta en true solomente es un indicador visual y el ususario no puede moverlo-->
+
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="3/5 " />
+
+        <SearchView
+            android:id="@+id/svUsers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Nombre: "
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/searchview_bg"
+            android:queryBackground="@android:color/transparent"/>
+
+        <ListView
+            android:id="@+id/lvUsers"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <CalendarView
+            android:id="@+id/cvEjemplo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Fecha seleccionada: " />
+
+
+
+        <VideoView
+            android:id="@+id/vvLocal"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+        <VideoView
+            android:id="@+id/vvWeb"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:backgroundTint="@color/orange" />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="1500dp"
+            tools:ignore="WebViewLayout" />
+
+        <ImageView
+            android:id="@+id/ivEjemplo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/mobile_marketing" />
+
+        <ImageView
+            android:id="@+id/ivUrl"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/delivery" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCircular"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ironman_logo"
+            app:shapeAppearanceOverlay="@style/Circular" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCircularWithStroke"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/ironman_logo"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:strokeColor="@color/orange"
+            app:strokeWidth="5dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivRoundedSquare"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/ironman_logo"
+            app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivRoundedSquareWithStroke"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/ironman_logo"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            app:strokeColor="@color/green"
+            app:strokeWidth="5dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCornerCut"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/ironman_logo"
+            app:shapeAppearanceOverlay="@style/CornerCut" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivDiamondCut"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/ironman_logo"
+            app:shapeAppearanceOverlay="@style/DiamondCut" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivSpecific"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/ironman_logo"
+            app:shapeAppearanceOverlay="@style/SpecificCornerCut" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivSpecificRounded"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/ironman_logo"
+            app:shapeAppearanceOverlay="@style/SpecificCornerRounded"
+            app:strokeColor="@color/green"
+            app:strokeWidth="5dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

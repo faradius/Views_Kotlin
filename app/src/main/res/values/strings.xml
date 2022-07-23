@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Views</string>
+
+    <string-array name="countries_array">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angolia</item>
+        <item>Anguilla</item>
+        <item>Antartica</item>
+    </string-array>
+</resources>

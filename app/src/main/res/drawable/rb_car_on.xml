@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners
+                android:bottomLeftRadius="10dp"
+                android:topLeftRadius="10dp"/>
+            <solid android:color="@color/colorOn"/>
+        </shape>
+    </item>
+    <item
+        android:bottom="10dp"
+        android:drawable="@drawable/ic_car"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp"/>
+
+<!--Un layer list es un grupo de items que se crea una composición de imagenes en forma de
+    capas, es decir, en este ejemplo se crea un rectangulo con sus propias caracteristicas,
+    este seria la primera imagen o drawable que contiene la etiqueta item,
+    despues se crea otra imagen, drawable o item encima de la primera imagen y este es
+    un carro por lo que da la impresion de que son imagenes que se van encimando una sobre otra,
+    por lo tanto el primer item del layer list que se encuentra hasta arriba sera la imagen
+    o la capa que se encontrará hasta al fondo de un conjunto de capas y el ultimo item
+    representará la capa que estará hasta al frente del conjunto de capas-->
+</layer-list>

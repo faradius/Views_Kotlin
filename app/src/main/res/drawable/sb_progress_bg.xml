@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background"
+        android:gravity="center_vertical|fill_horizontal">
+        <!--fill horizontal creo que se refiere a algo similar al match_parent-->
+        <shape android:shape="rectangle"
+            android:tint="@color/blue_dark">
+            <corners android:radius="8dp"/>
+            <size android:height="20dp"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress"
+        android:gravity="center_vertical|fill_horizontal">
+        <!--con scaleWidh se indica que no ocupe completamente el ancho si no el progreso que lleva-->
+        <scale android:scaleWidth="100%">
+            <selector>
+                <!--si no esta activado hacemos que el progress se quite-->
+                <item android:state_enabled="false"
+                    android:drawable="@android:color/transparent"/>
+                <item>
+                    <shape android:shape="rectangle"
+                        android:tint="@color/orange">
+                        <corners android:radius="8dp"/>
+                        <!--hacemos lo que ya lleva avanzado se vea mas grande a lo que esta por avanzar-->
+                        <size android:height="24dp"/>
+                    </shape>
+                </item>
+            </selector>
+        </scale>
+    </item>
+
+</layer-list>
