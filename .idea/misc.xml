@@ -11,6 +11,7 @@
         <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/drawable/gradient.xml" value="0.2825" />
         <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/drawable/ic_airplane.xml" value="0.144" />
         <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/drawable/ic_car.xml" value="0.2825" />
+        <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/drawable/ic_delete.xml" value="0.3015" />
         <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/drawable/ic_email.xml" value="0.2825" />
         <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/drawable/oval.xml" value="0.2825" />
         <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/drawable/rb_airplane_bg.xml" value="0.3095" />
@@ -30,9 +31,15 @@
         <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/drawable/sw_track.xml" value="0.2885" />
         <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/drawable/tg_travel_bg.xml" value="0.3095" />
         <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/layout/activity_buttons.xml" value="0.33" />
+        <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/layout/activity_constraint.xml" value="0.5" />
+        <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/layout/activity_linear_layout.xml" value="0.24583333333333332" />
         <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/layout/activity_main.xml" value="0.297029702970297" />
+        <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/layout/activity_relative_layout.xml" value="0.3625" />
         <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/layout/activity_search_view.xml" value="0.21920289855072464" />
         <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/layout/activity_widgets.xml" value="0.24048913043478262" />
+        <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/layout/calc.xml" value="0.33" />
+        <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/layout/gridlayout.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/Farad/AndroidStudioProjects/Views/app/src/main/res/layout/tablelayout.xml" value="0.3614583333333333" />
       </map>
     </option>
   </component>

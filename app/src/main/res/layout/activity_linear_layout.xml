@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LinearLayout">
+
+    <!--Formas de implementar el responsive Design con Linear Layout
+    NOTA: EL WEITH_LAYOUT ES UNA CARACTERISTICA DE LINEAR LAYOUT UNICAMENTE-->
+
+    <!--En este ejemplo no es necesario poner en el layout padre el peso maximo
+    en este nos podemos ir directamente a poner el peso de cada view, pero como
+    recomendación es necesario que el valor del layout_weight sea un numero entre 0 y 1
+    para que el valor decimal sea algo representativo al porcentaje que tendra cada view
+    es decir, el primer view tiene un 30% de peso y el segundo view tiene 70% al final
+    su sumatoria es uno equivalente al 100% del total del layout padre-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/teal_200"
+            android:layout_weight="0.3"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/orange"
+            android:layout_weight="0.7"/>
+
+    </LinearLayout>
+
+    <!--En el linear layout padre se pone el peso maximo que tendra los views o contenedores
+    al final, la sumatoria de cada contenedor debe ser igual al layout padre-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="6">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/purple"
+            android:layout_weight="2"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/orange"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue_dark"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:background="@color/blue_light"
+                android:layout_weight="0.5"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:background="@color/gray"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/blue_dark" />
+
+
+
+    </LinearLayout>
+</LinearLayout>
